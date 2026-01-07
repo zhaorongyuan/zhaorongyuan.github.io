@@ -44,6 +44,22 @@ colors:
   default_mode: light # light (浅色), dark (深色)
 # 颜色设置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
+# ------------------------------------------------------------------------------
+# 样式设置 (STYLE) - 修复 Cannot read properties of undefined (reading 'first_screen')
+# ------------------------------------------------------------------------------
+style:
+  # 首页头部设置
+  first_screen:
+    enable: true
+    background_multimedia:
+      enable: false
+    description: "一生二生三" # 也就是报错代码寻找的那个值
+    hitokoto: false
+  # 导航栏风格
+  navbar:
+    search: false
+# ------------------------------------------------------------------------------
+
 
 # 站点全局自定义 (SITE CUSTOMIZATION) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
 # 文档: https://redefine-docs.ohevan.com/basic/global
@@ -134,12 +150,12 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # 浅色模式图片
     dark: /images/wallhaven-wqery6-dark.webp # 深色模式图片
   # Banner 标题
-  title: 1s2s3
+  title: 
   # Banner 副标题
   subtitle:
-    text: [] # 副标题文字数组，例如 ["第一行文字", "第二行文字"]
+    text: ["花香自古溢八方","千古难寻贵人章","今非所问知所处","只因师心桂花香"] # 副标题文字数组，例如 ["第一行文字", "第二行文字"]
     hitokoto:  # 一言 (随机名言) 配置
-      enable: ture # 是否开启一言
+      enable: true # 是否开启一言
       show_author: false # 是否显示作者
       api: https://v1.hitokoto.cn # API 地址
     typing_speed: 100 # 打字速度 (ms)
@@ -280,11 +296,11 @@ articles:
   style:
     font_size: 16px # 正文字号
     line_height: 1.5 # 行高
-    image_border_radius: 14px # 图片圆角
+    image_border_radius: 15px # 图片圆角
     image_alignment: center # 图片对齐方式: left, center
-    image_caption: false # 是否显示图片标题 (alt)
+    image_caption: true # 是否显示图片标题 (alt)
     link_icon: true # 是否显示链接图标
-    delete_mask: false # <del> 标签是否开启遮罩效果 (鼠标悬停显示)
+    delete_mask: true # <del> 标签是否开启遮罩效果 (鼠标悬停显示)
     title_alignment: left # 标题对齐方式: left, center
     headings_top_spacing: # 各级标题的顶部间距
       h1: 3.2rem
