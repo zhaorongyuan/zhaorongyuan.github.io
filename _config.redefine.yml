@@ -1,0 +1,481 @@
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# THEME REDEFINE 配置文件 V2
+# 作者: EVANNOTFOUND
+# GITHUB: https://github.com/EvanNotFound/hexo-theme-redefine
+# 文档: https://redefine-docs.ohevan.com
+# 演示: https://redefine.ohevan.com
+# <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 基本信息 (BASIC INFORMATION) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/basic/info
+info:
+  # 网站标题 (左上角显示)
+  title: 1s2s3
+  # 网站副标题
+  subtitle: 一生二生三.
+  # 作者名称
+  author: OGN
+  # 网站 URL
+  url: http://1s2s3.com
+# 基本信息 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 图片配置 (IMAGE CONFIGURATION) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/basic/defaults
+defaults:
+  # 网站图标 (Favicon)
+  favicon: /source/_image/avatar.jpg
+  # 网站 Logo (留空则显示标题文字)
+  logo: 
+  # 头像 (侧边栏显示)
+  avatar: /source/_image/avatar.jpg
+# 图片配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 颜色设置 (COLORS) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/basic/colors
+colors:
+  # 主色调 (决定网站的主要颜色)
+  primary: "#A31F34"
+  # 次色调 (暂未实装)
+  secondary:
+  # 默认主题模式 (会被浏览器偏好覆盖)
+  default_mode: light # light (浅色), dark (深色)
+# 颜色设置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 站点全局自定义 (SITE CUSTOMIZATION) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/basic/global
+global:
+  # 自定义全局字体
+  fonts:
+    # 中文字体
+    chinese: 
+      enable: false # 是否开启自定义中文字体
+      family:  # 字体名称 (font-family)
+      url:  # 字体 CSS 文件的 URL
+    # 英文字体
+    english: 
+      enable: false # 是否开启自定义英文字体
+      family:  # 字体名称
+      url:  # 字体 URL
+    # 自定义标题字体 (导航栏, 侧边栏)
+    title:
+      enable: false # 是否开启
+      family:  # 字体名称
+      url:  # 字体 URL
+  # 内容区域最大宽度
+  content_max_width: 1000px
+  # 侧边栏宽度
+  sidebar_width: 210px
+  # 鼠标悬停效果
+  hover:
+    shadow: true # 是否开启阴影
+    scale: true # 是否开启缩放
+  # 滚动进度条
+  scroll_progress:
+    bar: true # 顶部条状进度条
+    percentage: true # 右下角百分比显示
+  # 网站统计计数器
+  website_counter:
+    url: https://cn.vercount.one/js # 计数器 API (通常无需修改)
+    enable: true # 是否开启
+    site_pv: true # 站点总访问量 (PV)
+    site_uv: true # 站点访客数 (UV)
+    post_pv: true # 文章阅读量
+  # 是否开启单页应用体验 (使用 swup，类似 pjax，页面切换无刷新)
+  single_page: true
+  # 是否开启预加载动画 (Preloader)
+  preloader:
+    enable: true
+    custom_message: OGN`s Blog # 自定义加载文字。如果为空，则显示网站标题
+  # 侧边工具栏设置 (右下角)
+  side_tools:
+    # 设置按钮是否开启齿轮旋转动画
+    gear_rotation: false
+    # 页面加载时是否自动展开工具栏
+    auto_expand: false
+  # 是否开启 Open Graph (SEO 优化，社交分享卡片)
+  open_graph:
+    enable: true
+    image: /images/redefine-og.webp  # 默认分享封面图
+    description: Hexo Theme Redefine, Redefine Your Hexo Journey.
+  # Google Analytics (谷歌统计)
+  google_analytics:
+    enable: false # 是否开启
+    id:  # Google Analytics Measurement ID
+# 站点全局自定义 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+    
+
+# FONTAWESOME 图标库 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/basic/fontawesome
+fontawesome: # 版本 Pro v6.2.1
+  # Thin 风格
+  thin: false
+  # Light 风格
+  light: false
+  # Duotone (双色) 风格
+  duotone: false
+  # Sharp Solid 风格
+  sharp_solid: false
+# FONTAWESOME 图标库 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 首页 Banner (HOME BANNER) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/home/home_banner
+home_banner:
+  # 是否开启首页大图
+  enable: true
+  # Banner 风格
+  style: fixed # static (静态), fixed (固定，有视差滚动效果)
+  # Banner 图片路径
+  image: 
+    light: /images/wallhaven-wqery6-light.webp # 浅色模式图片
+    dark: /images/wallhaven-wqery6-dark.webp # 深色模式图片
+  # Banner 标题
+  title: 1s2s3
+  # Banner 副标题
+  subtitle:
+    text: [] # 副标题文字数组，例如 ["第一行文字", "第二行文字"]
+    hitokoto:  # 一言 (随机名言) 配置
+      enable: ture # 是否开启一言
+      show_author: false # 是否显示作者
+      api: https://v1.hitokoto.cn # API 地址
+    typing_speed: 100 # 打字速度 (ms)
+    backing_speed: 80 # 删除速度 (ms)
+    starting_delay: 500 # 开始延迟 (ms)
+    backing_delay: 1500 # 删除延迟 (ms)
+    loop: true # 是否循环
+    smart_backspace: true # 是否智能删除
+  # Banner 文字颜色
+  text_color: 
+    light: "#fff" # 浅色模式下的文字颜色
+    dark: "#d1d1b6" # 深色模式下的文字颜色
+  # 文字样式细节
+  text_style: 
+    # 标题字号
+    title_size: 2.8rem
+    # 副标题字号
+    subtitle_size: 1.5rem
+    # 行高
+    line_height: 1.2
+  # Banner 自定义字体
+  custom_font: 
+    # 是否开启
+    enable: false
+    # 字体名称
+    family: 
+    # CSS 文件链接
+    url:
+  # Banner 社交链接图标
+  social_links:
+    # 是否开启
+    enable: true
+    # 样式
+    style: default # default (默认), reverse (反色), center (居中)
+    # 链接列表
+    links:
+      github: https://github.com/zhaorongyuan # 你的 GitHub 地址
+      instagram: # 你的 Instagram 地址
+      zhihu:  # 知乎
+      twitter:  # 推特
+      email:  # 邮箱
+      # ...... # 可以添加更多
+    # 带二维码的社交链接 (如微信)
+    qrs:
+      weixin:  # 微信二维码图片路径
+      # ...... # 可以添加更多
+# 首页 Banner <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 导航栏 (NAVIGATION BAR) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/home/navbar
+navbar:
+  # 向下滚动时自动隐藏导航栏
+  auto_hide: false
+  # 导航栏背景颜色
+  color:
+    left: "#f78736" # 左侧颜色 (渐变起始)
+    right: "#367df7"  # 右侧颜色 (渐变结束)
+    transparency: 35 # 透明度 (10-99)
+  # 导航栏宽度 (通常无需修改)
+  width:
+    home: 1200px # 首页
+    pages: 1000px # 其他页面
+  # 导航菜单链接
+  links:
+    Home: 
+      path: / 
+      icon: fa-regular fa-house # 图标代码 (FontAwesome)，可以为空
+    # Archives: 
+    #   path: /archives 
+    #   icon: fa-regular fa-archive # 归档
+    # Status: 
+    #   path: https://status.ohevan.com/
+    #   icon: fa-regular fa-chart-bar
+    # About:  # 关于页 (含子菜单示例)
+    #   icon: fa-regular fa-user
+    #   submenus:
+    #     Me: /about
+    #     Github: https://github.com/EvanNotFound/hexo-theme-redefine
+    #     Blog: https://ohevan.com
+    #     Friends: /friends
+    # Links: 
+    #   icon: fa-regular fa-link
+    #   submenus:
+    #     Link1: /link1
+    #     Link2: /link2
+    #     Link3: /link3
+    # ...... # 你可以添加更多
+  # 导航栏搜索 (本地搜索). 需要安装 hexo-generator-searchdb
+  search:
+    # 是否开启
+    enable: false
+    # 页面加载时是否预加载搜索数据
+    preload: true
+# 导航栏 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 首页文章列表设置 (HOME PAGE ARTICLE SETTINGS) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/home/home
+home:
+  # 侧边栏设置
+  sidebar:
+    enable: true # 是否开启侧边栏
+    position: left # 位置: left (左), right (右)
+    first_item: menu # 第一个显示的模块: menu (菜单), info (个人信息)
+    announcement: # 公告文字
+    show_on_mobile: true # 手机端是否显示侧边栏
+    links:
+      # Archives: 
+      #   path: /archives 
+      #   icon: fa-regular fa-archive 
+      # Tags: 
+      #   path: /tags 
+      #   icon: fa-regular fa-tags 
+      # Categories: 
+      #   path: /categories 
+      #   icon: fa-regular fa-folder 
+      # ...... # 可以添加更多
+  # 文章日期格式
+  article_date_format: auto # auto (自动), relative (相对时间), YYYY-MM-DD 等
+  # 文章摘要长度
+  excerpt_length: 200 
+  # 文章分类显示
+  categories:
+    enable: true  # 是否开启
+    limit: 3 # 最多显示几个分类
+  # 文章标签显示
+  tags:
+    enable: true  # 是否开启
+    limit: 3  # 最多显示几个标签
+# 首页文章列表设置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 文章详情页 (ARTICLE) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/posts/articles
+articles:
+  # 文章样式设置
+  style:
+    font_size: 16px # 正文字号
+    line_height: 1.5 # 行高
+    image_border_radius: 14px # 图片圆角
+    image_alignment: center # 图片对齐方式: left, center
+    image_caption: false # 是否显示图片标题 (alt)
+    link_icon: true # 是否显示链接图标
+    delete_mask: false # <del> 标签是否开启遮罩效果 (鼠标悬停显示)
+    title_alignment: left # 标题对齐方式: left, center
+    headings_top_spacing: # 各级标题的顶部间距
+      h1: 3.2rem
+      h2: 2.4rem
+      h3: 1.9rem
+      h4: 1.6rem
+      h5: 1.4rem
+      h6: 1.3rem
+  # 字数统计. 需要安装 hexo-wordcount
+  word_count:
+    enable: true # 是否开启
+    count: true # 显示字数
+    min2read: true # 显示阅读时长
+  # 作者标签 (如 Lv1, Lv2)
+  author_label: 
+    enable: true # 是否开启
+    auto: false # 是否自动生成
+    list: []
+  # 代码块设置
+  code_block:
+    copy: true # 是否开启复制代码按钮
+    style: simple # 风格: mac | simple
+    highlight_theme: # 代码高亮主题. 预览: https://highlightjs.org/examples
+      light: github # 浅色模式主题 (支持: github, atom-one-light, default)
+      dark: vs2015 # 深色模式主题 (支持: github-dark, monokai-sublime, vs2015, night-owl, atom-one-dark, nord, tokyo-night-dark, a11y-dark, agate)
+    font: # 自定义代码字体
+      enable: false 
+      family: 
+      url: 
+  # 目录 (TOC) 设置
+  toc:
+    enable: true # 是否开启目录
+    max_depth: 3 # 目录深度
+    number: false # 是否自动添加序号
+    expand: true # 是否展开目录
+    init_open: true # 默认打开目录
+  # 版权信息
+  copyright:
+    enable: true # 是否开启
+    default: cc_by_nc_sa # 默认协议 (cc_by_nc_sa, cc_by_nd 等)
+  # 是否开启图片懒加载
+  lazyload: true
+  # Pangu.js (自动在中英文之间加空格)
+  pangu_js: false
+  # 文章推荐. 需要安装 nodejieba
+  recommendation:
+    # 是否开启
+    enable: false
+    # 标题
+    title: 推荐阅读
+    # 显示数量限制
+    limit: 3
+    # 手机端显示数量限制
+    mobile_limit: 2
+    # 占位图
+    placeholder: /images/wallhaven-wqery6-light.webp
+    # 跳过目录
+    skip_dirs: []
+# 文章详情页 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 评论系统 (COMMENT) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/posts/comment
+comment:
+  # 是否开启评论
+  enable: true
+  # 选择评论系统
+  system: waline # 可选: waline, gitalk, twikoo, giscus
+  # 系统配置
+  config:
+    # Waline 评论系统. 文档: https://waline.js.org/
+    waline:
+      serverUrl: https://example.example.com # Waline 服务端地址
+      lang: zh-CN # 语言
+      emoji: [] # 表情包
+      recaptchaV3Key: # Google reCAPTCHA v3 Key
+      turnstileKey: # Turnstile Key
+      reaction: false # 是否开启反应 (点赞等)
+    # Gitalk 评论系统. 文档: https://github.com/gitalk/gitalk
+    gitalk:
+      clientID: # GitHub Application Client ID
+      clientSecret: # GitHub Application Client Secret
+      repo: # GitHub 仓库名
+      owner: # GitHub 仓库所有者
+      proxy: # 代理地址
+    # Twikoo 评论系统. 文档: https://twikoo.js.org/
+    twikoo:
+      version: 1.6.10 # 版本号
+      server_url: # Twikoo 服务端地址
+      region: # 区域
+    # Giscus 评论系统. 文档: https://giscus.app/
+    giscus:
+      repo: # Github 仓库名 (例如 EvanNotFound/hexo-theme-redefine)
+      repo_id: # Github 仓库 ID
+      category: # Github Discussion 分类
+      category_id: # Github Discussion 分类 ID
+      mapping: pathname # 页面映射方式
+      strict: 0 # 严格模式
+      reactions_enabled: 1 # 是否开启反应
+      emit_metadata: 0 # 是否发送元数据
+      lang: en # 语言
+      input_position: bottom # 输入框位置 (top, bottom)
+      loading: lazy # 懒加载
+# 评论系统 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 页脚 (FOOTER) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/footer
+footer:
+  # 是否显示网站运行时间
+  runtime: true 
+  # 页脚图标 (支持 HTML 格式的 FontAwesome 图标)
+  icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
+  # 建站时间 (格式: YYYY/MM/DD HH:mm:ss)
+  start: 2026/01/01 00:00:00
+  # 站点统计
+  statistics: true # 是否显示文章总数和字数
+  # 自定义页脚信息
+  customize:
+  # ICP 备案信息
+  icp:
+    enable: false # 是否开启
+    number: # 备案号
+    url: # 备案链接
+# 页脚 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 注入 (INJECT) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/inject
+inject:
+  # 是否开启注入
+  enable: false
+  # 注入自定义 HTML 代码到 <head>
+  head: 
+    -
+    -
+  # 注入自定义 HTML 代码到页脚
+  footer:
+    -
+    -
+# 注入 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 插件 (PLUGINS) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/plugins
+plugins:
+  # RSS 订阅. 需要安装 hexo-generator-feed
+  feed:
+    enable: false # 是否开启
+  # Aplayer 音乐播放器. 文档: https://github.com/DIYgod/APlayer
+  aplayer:
+    enable: false # 是否开启
+    type: fixed # 模式: fixed (吸底), mini (迷你)
+    audios:
+      - name: # 歌曲名
+        artist: # 歌手
+        url: # 歌曲链接
+        cover: # 封面链接
+        lrc: # 歌词
+      # .... 可以添加更多
+  # Mermaid 流程图. 需要安装 hexo-filter-mermaid-diagrams
+  mermaid:
+    enable: false # 是否开启
+    version: "11.4.1" # 版本
+# 插件 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# 页面模板 (PAGE TEMPLATES) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/page_templates
+page_templates:
+  # 友链页列数
+  friends_column: 2
+  # 标签页风格
+  tags_style: blur # blur (模糊), cloud (词云)
+# 页面模板 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+
+# CDN 加速 (CDN) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/cdn
+cdn:
+  # 是否开启 CDN
+  enable: false
+  # CDN 提供商
+  provider: npmmirror # npmmirror, zstatic, cdnjs, jsdelivr, unpkg, custom (自定义)
+  # 自定义 CDN URL
+  custom_url: 
+# CDN <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
+
+# 开发者模式 (DEVELOPER MODE) >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> start
+# 文档: https://redefine-docs.ohevan.com/developer
+developer:
+  # 是否开启开发者模式 (仅供想要修改主题源码的开发者使用，普通用户请勿开启)
+  enable: false
+# 开发者模式 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end

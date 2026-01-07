@@ -1,109 +1,118 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+# Hexo 配置文件
+## 文档: https://hexo.io/docs/configuration.html
+## 源码: https://github.com/hexojs/hexo/
 
-# Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+# 网站信息 (Site)
+title: 1s2s3         # 网站标题
+subtitle: ''         # 网站副标题
+description: ''      # 网站描述（用于SEO）
+keywords:            # 关键词
+author: OGN          # 作者名字
+language: zh-CN      # 语言（建议修改为 zh-CN）
+timezone: ''         # 时区（例如：Asia/Shanghai）
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+# 网址设置 (URL)
+## 在这里设置你的网站网址。
+## 例如，如果你使用 GitHub Page，将 url 设置为 'https://username.github.io/project'
+## 如果绑定了域名，就填你的域名
+url: http://1s2s3.com  # 🚨 记得改成你的真实域名或 GitHub Pages 地址
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+  trailing_index: true # 设置为 false 以从永久链接中移除 trailing 'index.html'
+  trailing_html: true  # 设置为 false 以从永久链接中移除 trailing '.html'
 
-# Directory
-source_dir: source
-public_dir: public
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
-i18n_dir: :lang
-skip_render:
+# 目录设置 (Directory)
+source_dir: source       # 资源文件夹（文章、图片等）
+public_dir: public       # 生成的静态网页文件夹
+tag_dir: tags            # 标签文件夹
+archive_dir: archives    # 归档文件夹
+category_dir: categories # 分类文件夹
+code_dir: downloads/code # 代码文件夹
+i18n_dir: :lang          # 国际化文件夹
+skip_render:             # 跳过渲染的文件
 
-# Writing
-new_post_name: :title.md # File name of new posts
-default_layout: post
-titlecase: false # Transform title into titlecase
+# 文章写作设置 (Writing)
+new_post_name: :title.md # 新文章的文件名格式
+default_layout: post     # 默认布局
+titlecase: false         # 是否将标题转换为标题大写
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
-  exclude: ''
-filename_case: 0
-render_drafts: false
-post_asset_folder: false
-relative_link: false
-future: true
-syntax_highlighter: highlight.js
+  enable: true           # 在新标签页打开外部链接
+  field: site            # 应用于整个网站
+  exclude: ''            # 排除的链接
+filename_case: 0         # 文件名大小写转换 (0: 不转换, 1: 小写, 2: 大写)
+render_drafts: false     # 是否渲染草稿
+post_asset_folder: false # 是否启动资源文件夹（每篇文章一个同名文件夹放图片）
+relative_link: true     # 是否使用相对链接
+future: true             # 是否显示未来的文章
+syntax_highlighter: highlight.js # 代码高亮插件
 highlight:
-  line_number: true
-  auto_detect: false
-  tab_replace: ''
-  wrap: true
-  hljs: false
-prismjs:
+  line_number: true      # 显示行号
+  auto_detect: false     # 自动检测语言
+  tab_replace: ''        # Tab 替换
+  wrap: true             # 代码换行
+  hljs: false            # 这里的 false 是指不给 css 类名加 hljs 前缀
+prismjs:                 # 另一种代码高亮方案
   preprocess: true
   line_number: true
   tab_replace: ''
 
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
+# 首页设置 (Home page setting)
+# path: 博客索引页的根路径 (默认为 '')
+# per_page: 每页显示的文章数 (0 = 关闭分页)
+# order_by: 文章排序 (默认按日期降序)
 index_generator:
   path: ''
   per_page: 10
   order_by: -date
 
-# Category & Tag
-default_category: uncategorized
-category_map:
-tag_map:
+# 分类 & 标签 (Category & Tag)
+default_category: uncategorized # 默认分类
+category_map:                   # 分类映射
+tag_map:                        # 标签映射
 
-# Metadata elements
+# 元数据元素 (Metadata elements)
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
+# 日期 / 时间格式 (Date / Time format)
+## Hexo 使用 Moment.js 来解析和显示日期
+## 你可以根据 http://momentjs.com/docs/#/displaying/format/ 自定义日期格式
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
+## updated_option 支持 'mtime' (修改时间), 'date' (创建时间), 'empty' (空)
 updated_option: 'mtime'
 
-# Pagination
-## Set per_page to 0 to disable pagination
+# 分页设置 (Pagination)
+## 将 per_page 设置为 0 以禁用分页
 per_page: 10
 pagination_dir: page
 
-# Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
+# 包含 / 排除文件 (Include / Exclude file(s))
+## include:/exclude: 选项仅适用于 'source/' 文件夹
 include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
+# 扩展 (Extensions)
+## 插件: https://hexo.io/plugins/
+## 主题: https://hexo.io/themes/
 # theme: landscape
 theme: redefine
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
-# deploy:
-#   type: ''
+# 部署设置 (Deployment)
+## 文档: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: https://github.com/zhaorongyuan/zhaorongyuan.github.io.git
-  branch: main
+  # 方案一：部署到阿里云服务器 (使用 SSH)
+  - type: git
+    # 你的阿里云服务器配置
+    repo: ssh://root@60.205.167.213/var/repo/hexo_blog.git
+    branch: master
+  
+  # 方案二：部署到 GitHub Pages
+  - type: git
+    # 使用 HTTPS 链接 (如果你网络好)
+    repo: https://github.com/zhaorongyuan/zhaorongyuan.github.io.git
+    # 💡 提示：如果总是连接超时，可以把上面这行改成 SSH 格式：
+    # repo: git@github.com:zhaorongyuan/zhaorongyuan.github.io.git
+    branch: main
