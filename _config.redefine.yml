@@ -37,7 +37,7 @@ defaults:
 # 文档: https://redefine-docs.ohevan.com/basic/colors
 colors:
   # 主色调 (决定网站的主要颜色)
-  primary: "#A31F34"
+  primary: "#C78A94"
   # 次色调 (暂未实装)
   secondary:
   # 默认主题模式 (会被浏览器偏好覆盖)
@@ -45,7 +45,7 @@ colors:
 # 颜色设置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 # ------------------------------------------------------------------------------
-# 样式设置 (STYLE) - 修复 Cannot read properties of undefined (reading 'first_screen')
+# 样式设置 (STYLE)
 # ------------------------------------------------------------------------------
 style:
   # 首页头部设置
@@ -53,7 +53,7 @@ style:
     enable: true
     background_multimedia:
       enable: false
-    description: "一生二生三" # 也就是报错代码寻找的那个值
+    description: "一生二生三"
     hitokoto: false
   # 导航栏风格
   navbar:
