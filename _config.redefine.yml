@@ -11,9 +11,9 @@
 # 文档: https://redefine-docs.ohevan.com/basic/info
 info:
   # 网站标题 (左上角显示)
-  title: 1s2s3
+  title: 一生二生三
   # 网站副标题
-  subtitle: 一生二生三.
+  subtitle: 首页.
   # 作者名称
   author: OGN
   # 网站 URL
@@ -25,11 +25,11 @@ info:
 # 文档: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # 网站图标 (Favicon)
-  favicon: /source/_image/avatar.jpg
+  favicon: /image/avatar.svg
   # 网站 Logo (留空则显示标题文字)
   logo: 
   # 头像 (侧边栏显示)
-  avatar: /source/_image/avatar.jpg
+  avatar: /image/avatar.jpg
 # 图片配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
