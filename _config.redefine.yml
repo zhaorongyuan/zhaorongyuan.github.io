@@ -25,11 +25,11 @@ info:
 # 文档: https://redefine-docs.ohevan.com/basic/defaults
 defaults:
   # 网站图标 (Favicon)
-  favicon: /image/avatar.svg
+  favicon: /image/avatar.png
   # 网站 Logo (留空则显示标题文字)
-  logo: 
+  logo: /image/avatar.png
   # 头像 (侧边栏显示)
-  avatar: /image/avatar.jpg
+  avatar: /image/avatar.png
 # 图片配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -53,7 +53,7 @@ style:
     enable: true
     background_multimedia:
       enable: false
-    description: "一生二生三"
+    description: ""
     hitokoto: false
   # 导航栏风格
   navbar:
@@ -105,13 +105,13 @@ global:
   # 是否开启预加载动画 (Preloader)
   preloader:
     enable: true
-    custom_message: OGN`s Blog # 自定义加载文字。如果为空，则显示网站标题
+    custom_message: Welcome Home # 自定义加载文字。如果为空，则显示网站标题
   # 侧边工具栏设置 (右下角)
   side_tools:
     # 设置按钮是否开启齿轮旋转动画
     gear_rotation: false
     # 页面加载时是否自动展开工具栏
-    auto_expand: false
+    auto_expand: true
   # 是否开启 Open Graph (SEO 优化，社交分享卡片)
   open_graph:
     enable: true
@@ -119,8 +119,8 @@ global:
     description: Hexo Theme Redefine, Redefine Your Hexo Journey.
   # Google Analytics (谷歌统计)
   google_analytics:
-    enable: false # 是否开启
-    id:  # Google Analytics Measurement ID
+    enable: true # 是否开启
+    id: G-1JNS5491C6 # Google Analytics Measurement ID
 # 站点全局自定义 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
     
 
@@ -196,7 +196,7 @@ home_banner:
       instagram: # 你的 Instagram 地址
       zhihu:  # 知乎
       twitter:  # 推特
-      email:  # 邮箱
+      email: 3514851405@qq.com # 邮箱
       # ...... # 可以添加更多
     # 带二维码的社交链接 (如微信)
     qrs:
